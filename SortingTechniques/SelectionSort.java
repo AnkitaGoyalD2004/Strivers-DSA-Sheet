@@ -2,7 +2,7 @@ package SortingTechniques;
 
 public class SelectionSort {
     public static void selection_sort(int []arr , int n){
-           for(int i = 0 ; i < n-1 ; i++){
+        for(int i = 0 ; i < n-1 ; i++){
             int minimum = i;
              
              for(int j = i+1 ; j < n ; j++){
@@ -12,7 +12,7 @@ public class SelectionSort {
              }
              int temp = arr[minimum];
              arr[minimum] = arr[i];
-             arr[i] = minimum;
+             arr[i] = temp;
            }
            for(int i=0; i< n ; i++){
             System.out.print(arr[i]);
